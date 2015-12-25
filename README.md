@@ -4,7 +4,7 @@
 #运行server
   1.cd 项目根目录
   
-  2.npm instal 
+  2.npm install
   
   3.npm install -g less
   
