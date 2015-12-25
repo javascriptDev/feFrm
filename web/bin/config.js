@@ -14,8 +14,8 @@ module.exports = {
 
 		},
 		resourceServer:'',
-		jsServer:'http://172.16.43.45:3001/',
-		imgServer:'http://172.16.43.45:3001/'
+		jsServer:'http://localhost:3001/',
+		imgServer:'http://localhost:3001/'
 	},
 	dist: {
 		tpl: {
