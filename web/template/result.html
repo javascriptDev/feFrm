@@ -1,0 +1,38 @@
+<header>
+    <article class="wrap">
+        <section class="sectionOne" data-click data-type='back'>
+        </section>
+        <section class="sectionTwo" data-click data-type='search'>
+            <h1>
+                <input class="search sIcon" disabled="1" type="text"/>
+                
+            </h1>
+        </section>
+        <section class="sectionThree" data-click data-type='main'></section>
+    </article>
+    <div class="panel" style='display:none;'>
+        <div class="tab navTab">
+            <a class="sort on sorttext" href="javascript:void(0);">综合排序 <span></span></a>
+            <a class="filter out" href="javascript:void(0);">筛选 <span></span></a>
+        </div>
+    </div>
+</header>
+<div class="nofind">
+    没有找到符合条件的商品
+</div>
+<div class='goods' style='margin-top:95px;'>
+</div>
+
+<% include pub/wfLoader.html%>
+<% include pub/loading.html%>
+<div class="tab_box layer-in" style='display:none;'>
+    <div class="tab">
+        <a class="sort on" data-tab="1" href="javascript:void(0);">综合排序 <span></span></a>
+        <a class="filter out" data-tab="2" href="javascript:void(0);">筛选 <span></span></a>
+    </div>
+    <% include pub/filter.html%>
+</div>
+
+<script>
+var list = '<%=list%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+</script>

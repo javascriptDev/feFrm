@@ -1,0 +1,18 @@
+<% include pub/header.html %>
+  
+<style type="text/css">
+    div{
+        position: absolute;
+        height:100px;
+        width:100px;
+        clip:rect(50px,50px,100px,0px);
+        border-radius: 50px;
+        background-color: red;
+    }
+</style>
+  <div></div>
+    
+    <% include pub/script.html %>
+        <script>
+        emar.use('js/page/test.js?ver=' + <%=resourceVer%>);
+        </script>

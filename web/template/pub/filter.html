@@ -1,0 +1,51 @@
+<div class="tab_box layer-in" style='display:none;'>
+    <div class="tab">
+        <div class="sort on" data-tab="1" >综合排序</div>
+        <div class="filter out" data-tab="2" >筛选</div>
+        <div class='layer-toggle'></div>
+    </div>
+    <div class='tab-c'>
+        <ul class='sort_alt' data-tab="1">
+            <li class="on"><a href="javascript:void(0);" data-type=''>综合排序<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='1'>分佣比例从高到低<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='2'>商品价格从低到高<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='3'>商品价格从高到低<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='4'>商品销量从高到低<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='5'>30天推广量从高到低<span></span></a></li>
+            <li><a href="javascript:void(0);" data-type='6'>30天支出佣金从高到低<span></span></a></li>
+        </ul>
+        <div class="filter_area" data-tab='2' style='display:none'>
+            <div class="filter_box">
+                <div>佣金比例
+                    <input name="" type="number" min='0' max='100' data-key="commissionRateSort" reg="(?!^0\.0?0$)^[0-9][0-9]?(\.[0-9]{1,2})?$|^100$" error="比例 >0 并且 <= 100.且最多包含2位小数."> %  至以上</div>
+                <div class="commissionRateSort-err" style='color:red;display:none;'></div>
+                <div>折扣比例
+                    <input name="" max='10' type="number" min='0' max='100' data-key="discountRate" reg="(?!^0\.0?0$)^[0-9]?(\.[1-9]{0,1})?$|^10$" error="比例 >0 并且 <=10 .且最多包含有1位小数."> 折至以下</div>
+                <div class="discountRate-err" style='color:red;display:none;'></div>
+                <div class="bb pb5 price">价格区间
+                    <input name="" min='0' type="number" data-key="lowPriceFilter" reg='^[0-9]*[1-9][0-9]*$' error="低价必须为正整数.">  至
+                    <input name="" min='0' type="number" data-key="highPriceFilter" reg='^[0-9]*[1-9][0-9]*$' than='lowPriceFilter' thanError='高价必须大于低价.' error="高价必须为正整数.">
+                </div>
+                <div class="lowPriceFilter-err" style='color:red;display:none;'></div>
+                <div class="highPriceFilter-err" style='color:red;display:none;'></div>
+                <div class="bb pb5 price">推广量 &nbsp;&nbsp;
+                    <input name="" type="number" min='0' data-key="lowTotalNum" reg='^[0-9]*[0-9][0-9]*$' error="推广量必须为正整数.">  至
+                    <input name="" type="number" min='0' data-key="highTotalNum" reg='^[0-9]*[0-9][0-9]*$' than='lowTotalNum' error='推广量必须为正整数.' thanError="高推广量必须大于低推广量.">
+                </div>
+                <div class="lowTotalNum-err" style='color:red;display:none;'></div>
+                <div class="highTotalNum-err" style='color:red;display:none;'></div>
+                <div>商家<span class="red_font business-text">全部</span></div>
+                <div class="clearfix bb pb10 business"><a style='display:none;' href="javascript:void(0);" data-key="shopFilter" class='on' data-root data-type="">全部</a><a href="javascript:void(0);" data-key="shopFilter" data-type='1'>淘宝</a><a href="javascript:void(0);" data-key="shopFilter" data-type='2'>天猫</a></div>
+                <div>服务</div>
+                <div class="clearfix bb pb10 service"><a href="javascript:void(0);" data-key="deliveryFee" data-type='0'>包邮</a></div>
+                <div class="category">
+                    <div>类目<span class="red_font category-text">所有分类</span></div>
+                    <div class="clearfix pb10 category_box">
+                        <div><a style='display:none;' href="javascript:void(0);" data-type="" class="on" data-key="categoryFilter">所有分类</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box"><a href="javascript:void(0);" class="out filter_reset">重置</a><a href="javascript:void(0);" class="on filter_submit">确认</a></div>
+        </div>
+    </div>
+</div>

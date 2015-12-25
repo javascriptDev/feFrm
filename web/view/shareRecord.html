@@ -1,0 +1,17 @@
+<% include pub/header.html %>
+    <div class="nofind" style='display: none'><img width='130px;' src="<%=jsServer%>images/pic_noorder.png">
+        <br/>
+        <div style='margin-top: 20px;font-size: 13px;'>您还没有分享记录</div>
+        <!-- <div class="gotoMain" style='border:1px solid #f43f48;width:210px;height:30px;margin:40px auto 0 auto;line-height:30px;color:#f43f48;'>逛逛好货</div> -->
+    </div>
+    <div class="main">
+    </div>
+    <% include ../template/pub/wfLoader.html%>
+        <% include ../template/pub/loading.html%>
+            <script>
+            var list = '<%=list%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+            </script>
+            <% include pub/script.html %>
+                <script>
+                emar.use('js/page/shareRecord.js?ver=' + <%=resourceVer%>);
+                </script>

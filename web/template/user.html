@@ -1,0 +1,47 @@
+<div class="main">
+    <div class='top-c'>
+        <div class='loader'>下拉刷新数据</div>
+        
+    </div>
+    <div class="goods">
+        <div class="banner">
+            <div class="inner">
+            </div>
+            <ul id="position">
+            </ul>
+        </div>
+        <div class="top">
+            <h1 class="goods-title-01 ">热门品类</h1>
+            <div class="seller ">
+                <ul class='hot-cgy'>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="goods_title clearfix">
+                <h1>今日值得分享</h1>
+                <a class="filter" href="javascript:void(0);">筛选 </a>
+                <a class="sort on sorttext" href="javascript:void(0);">综合排序 </a>
+            </div>
+            <div class='list-c'>
+            </div>
+            <div class="nofind"><img src="/images/pic_nofind.png">
+                <br/>没有符合条件的筛选结果</div>
+            <% include pub/wfLoader.html%>
+        </div>
+    </div>
+</div>
+<div class='mask'>
+</div>
+<% include pub/filter.html%>
+    <div class='mask'>
+    </div>
+    <a href="#">
+        <div class="rtop iconfont"></div>
+    </a>
+    <% include pub/loading.html%>
+        <script>
+        var list = '<%=list%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+        var carousel = '<%=carousel%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+        var catgory_tpl = '<%=catgory_tpl%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+        </script>

@@ -1,0 +1,26 @@
+<% for(var i in product){%>
+    <li class="li_list">
+        <a href="#"></a>
+        <div class="lable_bg">
+            <div class="lable"><span class="bg0">专享<br>活动</span><em class="bg0"></em></div>
+        </div>
+        <div class="pic"><img src="<%= product[i].hotImg%>">
+            <div class="pull_new" style="display:none;">分享成功</div>
+        </div>
+        <div class="title"><span><%=product[i].backRebate%>%折/<%=product[i].descn %></span>
+            <%=product[i].productName%><em class="pn_title">抢购资格</em></div>
+        <div class="money_bg">
+            <div class="money">￥<span class="num"><%=product[i].discountPrice%></span>
+                <del>￥
+                    <%= product[i].reservePrice%>
+                </del>
+            </div>
+            <div class="money"><span class="jian">-</span><span class="num1"><% product[i].reservePrice-product[i].discountPrice%></span><span class="buy"><em></em>购买后返39%</span></div>
+            <div class="botton botton2"><em class="icon">立即分享<br><b>获取抢购资格</b></em><span class="icon"></span></div>
+        </div>
+        <div class="brand_list_msg" id="js_brand_list_msg">
+            <p class="p1"><span class="s1">在天猫购买的价格</span><span class="s2" title="关闭">×</span></p>
+            <p class="p2"><span class="s1">通过易购购买后返利</span></p>
+        </div>
+    </li>
+    <%}%>

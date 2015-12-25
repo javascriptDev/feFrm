@@ -1,0 +1,20 @@
+{
+  "name": "pgy",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "start node start.js",
+    "restart": "node restart.js"
+  },
+  "dependencies": {
+    "koa": "~1.0.0",
+    "koa-ejs": "~2.0.1",
+    "koa-static-cache": "~3.1.2",
+    "koa-favicon":"~1.2.0",
+    "request":"*",
+    "co":"~4.6.0",
+    "uglify-js":"~2.6.1",
+    "ncp":"~2.0.0",
+    "ps-tree":"~1.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+.loader {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-size: 213px 40px !important;
+  background-repeat: no-repeat !important;
+  background-color: #ebebeb !important;
+  background-image: url(/images/pull.gif);
+  font-size: 12px;
+}

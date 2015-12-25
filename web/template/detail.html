@@ -1,0 +1,52 @@
+<div class="banner" data-click>
+    <%if(de.item){%>
+        <div class="inner">
+            <%for(var i in de.item.smallImages){%>
+                <div data-carousel><img src="<%=de.item.smallImages[i]%>" /></div>
+                <%}%>
+        </div>
+        <ul id="position">
+            <%for(var i=0;i<de.item.smallImages.length;i++){%>
+                <%if(i==0){%>
+                    <li class="cur"></li>
+                    <%}else{%>
+                        <li></li>
+                        <%}%>
+                            <%}%>
+        </ul>
+        <%}else{%>
+            <img width=100% height=100% src="<%=de.productImg%>" />
+            <%}%>
+</div>
+<div class="single_goods">
+    <div class="info">
+        <div class="info">
+            <div class="title" name="c">
+                    <%=de.item.title%>
+                <p></p>
+                
+                <%if(de.deliveryFee==0){%>
+                    <span class="post">包邮</span>
+                    <%}%>
+                        <span class="discount">
+                        <%=floor(pd.discountPrice,pd.price)%>折
+                    </span>
+            </div>
+            <div class="row_2">
+                <span>今日特卖:</span>
+                <span><i>¥</i><%=fixed(pd.discountPrice)%></span><span>原价：<%=fixed(pd.price)%></span>
+            </div>
+            <div class="row_3">
+                <div class="seller">
+                    <%if(de.shopType == 2){%>
+                        <span><img src="<%=jsServer()%>images/logo_tianmao.png" /></span>
+                        <%=pd.nick%>
+                    <%}else{%>
+                        淘宝 <span class=<%= type(de.storeLevel) %> style='width:<%=count(de.storeLevel,40)%>'></span>
+                    <%}%>
+                </div>
+               <%if(de.saleNum){%> <span>销量：<%=de.saleNum%></span> <%if(de.commentCount){%> | <%}%><%}%>   <%if(de.commentCount){%> <span>评价：<%=de.commentCount%></span> <%}%>
+            </div>
+        </div>
+        <div class="btn_box" data-click href="javascript:void(0);">立即购买</div>
+        <!-- <div style="text-align:center;margin-top:30px;height:40px;line-height:40px;">powered by 蒲公英</div> -->

@@ -1,0 +1,31 @@
+var app = require('../app');
+var cluster = require('cluster');
+var fs = require('fs');
+var numCPUs = require('os').cpus().length / 2;
+var port = require('./config').port;
+
+if (cluster.isMaster) {
+
+	// util.delFile(__dirname + path.sep + 'ports.js');
+	// Fork workers.
+	for (var i = 0; i < numCPUs; i++) {
+		cluster.fork();
+	}
+
+	var pid = [];
+	/*
+	cluster.on('listening', function(worker, address) {
+		pid.push(worker.process.pid);
+		if (pid.length == numCPUs) {
+			var writeStream = fs.createWriteStream(__dirname + '/ports.js');
+			writeStream.write('module.exports = [' + pid + ']');
+		}
+	});
+*/
+	//cluster.on('exit', function(worker, code, signal) {
+		// cluster.fork();
+	//});
+
+} else {
+	app.listen(port);
+}

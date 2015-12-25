@@ -1,0 +1,17 @@
+{
+  "name": "pgy",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "forever start ./forever.json",
+    "restart": "forever restartall"
+  },
+  "dependencies": {
+    "koa": "~1.0.0",
+    "koa-ejs": "~2.0.1",
+    "koa-static-cache": "~3.1.2",
+    "koa-favicon":"~1.2.0",
+    "request":"*",
+    "sqwish":"~0.2.2"
+  }
+}

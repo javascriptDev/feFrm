@@ -1,0 +1,45 @@
+events.js:142
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3001
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at Server._listen2 (net.js:1238:14)
+    at listen (net.js:1274:10)
+    at Server.listen (net.js:1370:5)
+    at Application.app.listen (D:\yqf\node_modules\koa\lib\application.js:70:24)
+    at start (D:\yqf\jsServer\app.js:21:9)
+    at Object.<anonymous> (D:\yqf\jsServer\app.js:12:1)
+    at Module._compile (module.js:399:26)
+    at Object.Module._extensions..js (module.js:406:10)
+events.js:142
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3001
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at Server._listen2 (net.js:1238:14)
+    at listen (net.js:1274:10)
+    at Server.listen (net.js:1370:5)
+    at Application.app.listen (D:\yqf\node_modules\koa\lib\application.js:70:24)
+    at start (D:\yqf\jsServer\app.js:18:9)
+    at Object.<anonymous> (D:\yqf\jsServer\app.js:12:1)
+    at Module._compile (module.js:399:26)
+    at Object.Module._extensions..js (module.js:406:10)
+events.js:142
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3001
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at Server._listen2 (net.js:1238:14)
+    at listen (net.js:1274:10)
+    at Server.listen (net.js:1370:5)
+    at Application.app.listen (D:\yqf\node_modules\koa\lib\application.js:70:24)
+    at start (D:\yqf\jsServer\app.js:18:9)
+    at Object.<anonymous> (D:\yqf\jsServer\app.js:12:1)
+    at Module._compile (module.js:399:26)
+    at Object.Module._extensions..js (module.js:406:10)

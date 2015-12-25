@@ -1,0 +1,23 @@
+<%for(var i in list){%>
+    <div class=item data-id="<%=list[i].productId%>">
+        <img src="<%=list[i].productImg%>">
+        <div class=inner>
+            <div class="title"><span><img src="<%=text(list[i].shopType)%>"></span>
+                <%=list[i].productName%>
+            </div>
+            <div class="row_2">
+                <%if(floor(list[i].discountPrice,list[i].originalPrice)!=10){%>
+                    <span class="discount fl"><%=floor(list[i].discountPrice,list[i].originalPrice)%>折</span>
+                    <%}%>
+                        <%if(list[i].deliveryFee==0){%>
+                            <span class="post fl">包邮</span>
+                            <%}%>
+            </div>
+        </div>
+        <div class=foot>
+        	<span class=discount>¥<%=list[i].discountPrice%></span>
+        	<span class=original>¥<%=list[i].originalPrice%></span>
+        	<div class=buy>立即购买</div>
+        </div>
+    </div>
+    <%}%>

@@ -1,0 +1,49 @@
+<div class="main">
+    <div class="result">
+        <div class="result_top mb10" data-click data-type='balance'>
+            <div class="top"><span>可用余额</span><span class="AvailableBalance"></span></div>
+            <div class="bottom"><span>即将可用</span><span class='expectFeedBackAmt'></span></div>
+        </div>
+        <div class="floor2_result mb10">
+            <a href="#" data-click data-type='old'><span class="order_detail">订单明细<em style='display:none;' class="order_num">+<span class='msgCount'></span>订单</em></span></a>
+            <a href="#" data-click data-type='sr'><span class="share">分享记录</span></a>
+        </div>
+        <div class="floor3_result">
+            <div class="tab_nav">
+                <div data-click data-type='yd'><span class="active">昨日</span></div>
+                <div data-click data-type='7d'><span>7日</span></div>
+                <div data-click data-type='30d'><span>30日</span></div>
+                <div data-click data-type='more' class='p-more'></div>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <span data-val='browseNumber'></span><span>浏览（<span style='display:inline;' data-val='shareNumber'></span>次分享）</span>
+                </li>
+                <li>
+                    <span data-val='clicks'></span><span>点击</span>
+                </li>
+                <li data-click data-type='oldParam'>
+                    <span data-val='productionOrder'></span><span>产生订单</span>
+                </li>
+                <li>
+                    <span data-val='estimatedReturn' class="color01"></span><span>+预估收益</span>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li>
+                    <span data-val='settlementOrders'></span><span>+ 结算订单</span>
+                </li>
+                <li>
+                    <span data-val='availableBalance' class="color01"> </span><span>+可用余额</span>
+                </li>
+                <li>
+                    <span data-val='recordOrders'></span><span>+ 记录订单</span>
+                </li>
+                <li>
+                    <span data-val='soonBalance' class="color01"> </span><span>+即将可用</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<% include pub/loading.html%>

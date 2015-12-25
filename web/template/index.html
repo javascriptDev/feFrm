@@ -1,0 +1,321 @@
+<div class="header_top_bg">
+    <div class="header_top width1200">
+        <div class="header_left">
+            <ul>
+                <li>您好！</li>
+                <li class="list_1" id="user_login_li"><a class="color_word">马上登录</a><em class="online"></em><em class="head_jt"></em>
+                    <ul class="list_info" id="list_1">
+                        <li class="border_btm"><a href="#"><span class="icon icon1"></span>易购登录</a></li>
+                        <li><a href="#"><span class="icon icon2"></span>QQ登录</a></li>
+                        <li><a href="#"><span class="icon icon3"></span>淘宝登录</a></li>
+                        <li><a href="#"><span class="icon icon4"></span>支付宝登录</a></li>
+                        <li><a href="#"><span class="icon icon5"></span>微信登录</a></li>
+                        <li><a href="#"><span class="icon icon6"></span>易购登录</a></li>
+                    </ul>
+                </li>
+                <li class="pad_left"><a href="#">免费注册</a></li>
+            </ul>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="#">易购首页</a><em class="online"></em></li>
+                <li class="list_1" id="top_nav"><a class="color_word">网站导航</a><em class="online"></em><em class="head_jt"></em>
+                    <dl class="list_info" id="list_2">
+                        <dt><a href="#">返利</a></dt>
+                        <dd><a href="#">超级返</a><a href="#">特卖惠</a><a href="#">电商返利</a><a href="#">宝贝返利</a></dd>
+                        <dt><a href="#">优惠</a></dt>
+                        <dd><a href="#">超级红包</a><a href="#">超值购</a><a href="#">优惠卷</a></dd>
+                        <dt><a href="#">活动</a></dt>
+                        <dd class="last"><a href="#">签到</a><a href="#">易币商城</a></dd>
+                    </dl>
+                </li>
+                <li><a href="#">易币商城</a><em class="online"></em></li>
+                <li><a href="#">收藏易购</a><em class="online"></em></li>
+                <li><a href="#">卖家中心</a><em class="online"></em></li>
+                <li><a href="#"><em class="icon icon1"></em>在线客服</a><em class="online"></em></li>
+                <li><a href="#"><em class="icon icon2"></em>帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+window.onload = function() {
+    $('#user_login_li').hover(function() {
+        $(this).attr('class', 'list_1_hover');
+        $('#list_1').css('display', 'block');
+    }, function(e) {
+        $(this).attr('class', 'list_1');
+        $('#list_1').css('display', 'none');
+    });
+
+    $('#top_nav').hover(function() {
+        $(this).attr('class', 'list_1_hover');
+        $('#list_2').css('display', 'block');
+    }, function(e) {
+        $(this).attr('class', 'list_1');
+        $('#list_2').css('display', 'none');
+    });
+}
+</script>
+<!-- logo部分 -->
+<div class="head_logo_bg">
+    <div class="head_logo_main width1040">
+        <div class="head_logo">
+            <a href="#"><img src="images/i_logo.png"></a>
+        </div>
+        <div class="head_seach">
+            <div class="header_serch_left" onmouseover="document.getElementById('header_serch_down').style.display='block'" onmouseout="document.getElementById('header_serch_down').style.display='none'">
+                <div class="serch_close">
+                    <a href="#"></a>
+                </div>
+                <div class="serch_text_bg">
+                    <input name="" type="text" class="serch_text" value="粘贴淘宝/天猫商品标题，购物拿返利" onfocus="this.className='serch_text_hover'" onblur="this.className='serch_text_hover'" />
+                </div>
+                <div class="header_serch_down" id="header_serch_down" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
+                    <ul>
+                        <li><a href="#">在<strong>“t”</strong>相关商城 >></a>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="serch_list"><a href="#"><i><img src="images/demoimg/jd.png" /></i><span>京东</span><span class="serch_fanli">最高返利<em class="englist">35%</em></span></a></li>
+                        <li class="serch_list"><a href="#" class="li_hover"><i><img src="images/demoimg/jd.png" /></i><span>京东</span><span class="serch_fanli">最高返利<em class="englist">35%</em></span></a></li>
+                        <li class="serch_list"><a href="#"><i><img src="images/demoimg/jd.png" /></i><span>京东</span><span class="serch_fanli">最高返利<em class="englist">6.75</em>倍易币</span></a></li>
+                        <li class="serch_list"><a href="#"><i><img src="images/demoimg/jd.png" /></i><span>京东</span><span class="serch_fanli">最高返利<em class="englist">6.75</em>倍易币</span></a></li>
+                        <li class="serch_list"><a href="#"><i><img src="images/demoimg/jd.png" /></i><span>京东</span><span class="serch_fanli">最高返利<em class="englist">35%</em></span></a></li>
+                        <li><a href="#">在<strong>“t”</strong>相关优惠券 >></a></li>
+                        <li><a href="#">在<strong>“t”</strong>相关全网比价 >></a></li>
+                        <li><a href="#">在<strong>“t”</strong>相关优惠券 >></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_serch_right">
+                <input name="" type="button" class="header_serch_botton" value="购物拿返利" />
+            </div>
+            <div class="header_tishi">
+                <div class="tishi_jiantou"></div>
+                <p class="tishi_word color_99">亲，淘宝网自7月1日起，不支持淘宝宝贝的链接搜索功能；聚划算商品不返利！
+                    <br /> 您可以
+                    <span class="color_orange">"粘贴宝贝名称"</span> 搜索，搜索到的宝贝都有返利。<a href="#" class="margin_left55">关闭</a></p>
+            </div>
+        </div>
+        <div class="header_advert"><img src="http://img0.egou.com/0/ad/201407/02/fe47f52feb312540ce1020a9410bf2e3.png"></div>
+    </div>
+</div>%
+<!--  nav -->
+<div class="nav_bg">
+    <div class="nav_main width1040">
+        <ul class="i_nav">
+            <li><a href="#" class="active">首页</a><em class="nav_hot"></em></li>
+            <li><a href="#">超级返</a><em class="nav_new"></em></li>
+            <li><a href="#">特卖惠</a></li>
+            <li><a href="#">商城返利</a></li>
+            <li><a href="#">超级红包</a></li>
+            <li><a href="#">签到赚钱</a></li>
+        </ul>
+        <div class="nav_right" onmouseover="document.getElementById('i_code').style.display='block'" onmouseout="document.getElementById('i_code').style.display='none'">
+            <a href="javascript:void();" class="egou_name"><span class="icon"></span>手机上易购</a>
+            <div class="icode_bg" id="i_code">
+                <span class="jt"></span>
+                <div class="egou_code">
+                    <span class="code_pic"></span>
+                    <span class="code_word">易购客户端</span>
+                </div>
+                <div class="code_btn">
+                    <a href="#" class="iphone"></a>
+                    <a href="#" class="android"></a>
+                </div>
+                <div class="egou_code">
+                    <span class="code_pic1"></span>
+                    <span class="code_word">易购官方微信</span>
+                </div>
+                <div class="code_tishi">关注易购官方微信
+                    <br>返利到账早知道</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 内容部分 -->
+<div class="i_main width1040">
+    <div class="index_fx_list">
+        <ul>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/1332986382920.png" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+                <div class="fx_logo">
+                    <a href="#"><img src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif" /></a>
+                    <div class="fanbei_icon"></div>
+                </div>
+                <div class="fx_word">全场返利3.5%</div>
+                <div class="fx_botton_bg">
+                    <div class="fx_shop"><a href="#">直接购物<b></b></a></div>
+                    <div class="fx_fanli"><a href="##">返利详情<b></b></a></div>
+                </div>
+            </li>
+            <li class="last">
+                <div class="next">
+                    <a href="#"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="i_fx_pic">
+        <div class="i_banner">
+            <ul class="51buypic">
+                <li>
+                    <a href="#" target="_blank"><img src="http://img0.egou.com/0/ad/201504/21/20bc91506cf2fe14c887be5d3e1a20c9.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://img0.egou.com/0/ad/201504/20/cf875700c627345cfd8c9a29822615db.gif" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://img0.egou.com/0/ad/201504/20/3d767946d92e3d95b4c7ee9b67b585d8.jpg" /></a>
+                </li>
+            </ul>
+            <div class="num">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="" id="i_brand_name">
+    <div class="i_brand_name width1040">
+        <ul id="index_brand">
+            <li><a href="index.html#chaojifan" id="chaojifan" class="active"><span class="name">超级返</span><span class="word"><em>•</em>每天10点上新</span><b></b></a></li>
+            <li class="name"><a href="1.html#temaihui" id="temaihui"><span class="name">特卖惠</span><b></b></a></li>
+        </ul>
+        <div class="i_tishi" id="i_tishi"><span>超级返的商品，<br>点击直接购买就能拿到返利哦</span><a href="#" class="yes">知道了</a></div>
+    </div>
+</div>
+<div class="i_brand_bg">
+    <div class="i_main width1040">
+        <div class="" id="fixed_top_mlnav">
+            <div class="i_brand_mlnav"><a href="#" class="active">全部</a><a href="#">食品</a><a href="#">内衣</a><a href="#">数码电器</a><a href="#">家居家纺</a><a href="#">美妆</a><a href="#">女装</a><a href="#">男装</a><a href="#">鞋包配饰</a><a href="#">母婴</a></div>
+        </div>
+        <!-- 超级返广告位 -->
+        <div class="i_brand_advert">
+            <ul class="advert_list">
+                <li>
+                    <div class="i_border_top"></div>
+                    <div class="i_border_right"></div>
+                    <div class="i_border_bootom"></div>
+                    <div class="i_border_left"></div>
+                    <a href="#"><img src="http://img0.egou.com/brand/201507/08/11b3a65be63821f475f72023830d51be.jpg"></a>
+                </li>
+                <li>
+                    <div class="i_border_top"></div>
+                    <div class="i_border_right"></div>
+                    <div class="i_border_bootom"></div>
+                    <div class="i_border_left"></div>
+                    <a href="#"><img src="http://img0.egou.com/brand/201507/08/11b3a65be63821f475f72023830d51be.jpg"></a>
+                </li>
+                <li>
+                    <div class="i_border_top"></div>
+                    <div class="i_border_right"></div>
+                    <div class="i_border_bootom"></div>
+                    <div class="i_border_left"></div>
+                    <a href="#"><img src="http://img0.egou.com/brand/201507/08/11b3a65be63821f475f72023830d51be.jpg"></a>
+                </li>
+                <li>
+                    <div class="i_border_top"></div>
+                    <div class="i_border_right"></div>
+                    <div class="i_border_bootom"></div>
+                    <div class="i_border_left"></div>
+                    <a href="#"><img src="http://img0.egou.com/brand/201507/08/11b3a65be63821f475f72023830d51be.jpg"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 超级返商品 -->
+        <div class="index_brand_name"><span>今日必抢</span><span class="word">每日10点上新 限量抢购 先到先得哦！</span></div>
+        <div class="i_brand_list">
+            <ul>
+                <% include ../template/product.html %>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="i_jiazai"></div>
+        <div class="i_loading"></div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="i_right_navbg" id="i_right_nav">
+    <div class="i_right_nav">
+        <ul class="i_right_one">
+            <li>
+                <a href="#" class="icon1"></a><span class="word">我的账号</span><em class="online"></em></li>
+            <li>
+                <a href="#" class="icon2"></a><span class="word">我的订单</span></li>
+            <li>
+                <a href="#" class="icon3"></a><span class="word">我的返利</span></li>
+            <li>
+                <a href="#" class="icon4"></a><span class="word">我的易币</span></li>
+            <li>
+                <a href="#" class="icon5"></a><span class="word">我的红包</span></li>
+        </ul>
+        <ul class="i_right_bot">
+            <li id="li_code">
+                <a href="#" class="icon1"></a><span class="right_code"></span></li>
+            <li>
+                <a href="#" class="icon2"></a><span class="word">在线客服</span></li>
+            <li>
+                <div class="scroll_top" id="scroll">
+                    <a href="#" class="icon3"></a><span class="word">返回顶部</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+var tplStr = '<%=list%>'.replace(/&lt;/ig,'<').replace(/&gt;/ig,'>').replace(/&quot;/ig,'"')   ;
+</script>

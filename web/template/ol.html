@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="order">
+        <div class="nav clearfix">
+            <span><a class="active" data-type='0'>全部</a></span>
+            <span><a  data-type='2'>已结算</a></span>
+            <span><a data-type='1'>待结算</a></span>
+            <span><a  data-type='3'>无效</a></span>
+        </div>
+        <div class='body'>
+        </div>
+        <div class="nofind" style='display: none'><img width='130px;' src="/images/pic_noorder.png">
+            <br/>
+            <div style='margin-top: 20px;'>您还没有订单</div>
+            <div class="gotoMain" style='border:1px solid #f43f48;width:210px;height:30px;margin:40px auto 0 auto;line-height:30px;color:#f43f48;'>逛逛好货</div>
+            </div>
+        <% include pub/wfLoader.html%>
+       <div class="wrapper loading-mask">
+         <div class="loading_css3"></div>
+         <div class='loding-text'> 加载中...</div>
+    </div>
+    </div>
+</div>
+<script>
+var olListTpl = '<%=olListTpl%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+</script>

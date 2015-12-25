@@ -1,0 +1,12 @@
+<% include pub/header.html %>
+    <div class='list'>
+    </div>
+            <% include ../template/pub/wfLoader.html%>
+
+    <% include pub/script.html %>
+    <script type="text/javascript">
+   	 var list ="<%=list%>".replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+    </script>
+        <script>
+        emar.use('js/page/sc.js?ver=' + <%=resourceVer%>);
+        </script>

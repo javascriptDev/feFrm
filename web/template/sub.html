@@ -1,0 +1,18 @@
+<div class="main" style='margin-top:0;'>
+    <img class="topic_img" style='width:100%;display:none' />
+    	
+    <div class="goods">
+        <div class="bottom">
+            <div class='list-c'>
+            </div>
+            <% include pub/wfLoader.html%>
+        </div>
+    </div>
+</div>
+<a href="#">
+    <div class="rtop iconfont"></div>
+</a>
+<% include pub/loading.html%>
+<script>
+var list = '<%=list%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+</script>

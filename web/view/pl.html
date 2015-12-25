@@ -1,0 +1,52 @@
+<% include pub/header.html %>
+    <div class="main">
+        <div class="results">
+            <div class="time"></div>
+            <div class="nav">
+                <div>浏览/点击</div>
+                <div class='select'>
+                    <div class='sel-text'>创建订单</div>
+                    <div class='group'>
+                        <div value='1' selected="selected">创建订单</div>
+                        <div value='2'>记录订单</div>
+                        <div value='3'>确认订单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nofind" style='display: none'><img width='130px;' src="<%=jsServer%>images/pic_noorder.png">
+            <br/>
+            <div style='margin-top: 20px;font-size: 13px;'>您还没有业绩</div>
+            <!-- <div class="gotoMain" style='border:1px solid #f43f48;width:210px;height:30px;margin:40px auto 0 auto;line-height:30px;color:#f43f48;'>逛逛好货</div> -->
+        </div>
+        <div class='list'>
+        </div>
+    </div>
+    <div class='date-get'>
+        <div class='date-get-inner'>
+            <div class='sel'>
+                <div class='sd'>最近7日</div>
+                <div class='td'>最近30日</div>
+            </div>
+        </div>
+    </div>
+    <div class='tb'>
+        <div class='submit'>确定</div>
+        <div class='cancelBtn'>取消</div>
+    </div>
+    <div class="results_b">
+        <div class="left">汇总</div>
+        <div class="right">
+        </div>
+    </div>
+
+    <div class='toast'></div>
+    <% include ../template/pub/wfLoader.html%>
+        <% include ../template/pub/loading.html%>
+            <script>
+            var list = '<%=list%>'.replace(/&lt;/ig, '<').replace(/&gt;/ig, '>').replace(/&quot;/ig, '"');
+            </script>
+            <% include pub/script.html %>
+                <script>
+                emar.use('js/page/pl.js?ver=' + <%=resourceVer%>);
+                </script>

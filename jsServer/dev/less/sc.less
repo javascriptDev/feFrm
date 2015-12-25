@@ -1,0 +1,106 @@
+@import 'public/base';
+@import 'public/loading';
+@import 'public/wfLoading';
+body {
+    background-color: #ccc;
+}
+
+.list {
+    width: 10rem;
+    margin: 0 auto;
+    .item {
+        width: 100%;
+        margin-top: 5px;
+        background-color: white;
+        padding: 0 0.3rem;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+        }
+        .inner {
+            position: relative;
+            .title {
+                line-height: 0.63rem;
+                height: 1.5rem;
+                font-size: 0.41rem;
+                word-break: break-all;
+                display: -webkit-box;
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                -ms-flex-align: center;
+                /* IE 10 */
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                span {
+                    display: inline-block;
+                    width: 1rem;
+                    position: relative;
+                }
+                img {
+                    display: block;
+                    width: 0.86rem;
+                    position: absolute;
+                    top: -0.5rem;
+                }
+                &:after{
+                    height:0.79rem;
+                    width:3rem;
+                    position: absolute;
+                    right:0;
+                    top:0.63rem;
+                    content: '';
+                    background-color: white;    
+                }
+            }
+            .row_2 {
+                height: 0.79rem;
+                position: absolute;
+                z-index: 99;
+                right: 0;
+                top: 0.7rem;
+                span {
+                    display: inline-block;
+                    height: 0.45rem;
+                    line-height: 0.45rem;
+                    background-color: #787878;
+                    color: #fff;
+                    font-size: 0.31rem;
+                    padding: 0 0.12rem;
+                    margin: 0.19rem 0.22rem 0.19rem 0;
+                    border-radius: 0.07rem;
+                }
+            }
+        }
+        .foot {
+            position: relative;
+            height:1.6rem;
+            .original {
+                text-decoration: line-through;
+                font-size: 18px;
+                margin-left: 25px;
+                color: #ccc;
+            }
+            .discount {
+                color: #f43f48;
+                font-size: 22px;
+            }
+            .buy {
+                height: 30px;
+                width: 80px;
+                background-color: #f43f48;
+                color: white;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 12px;
+                position: absolute;
+                top: 15px;
+                right:0;
+            }
+        }
+    }
+}
