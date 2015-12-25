@@ -38,16 +38,22 @@
       -dist  --->   打包后资源目录
       
   web           --->  web 服务器。处理请求，路由到controller，拉取数据，渲染页面
+    
     -router     ---> 路由
     
     -template   ---> 模板碎片
+    
     -view       ---> 页面骨架
+    
     -app.js     ---> 程序入口
+    
     -fetch.js   ---> 取数据封装的函数
   
   logs
     -jsServer  ---> js服务器日志
+    
     -web       ---> web服务器日志
+    
     -less     ---> less自动编译日志
   pid
     jsserver，web process id
